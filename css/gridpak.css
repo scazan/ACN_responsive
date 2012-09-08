@@ -1,0 +1,310 @@
+/* Reusable column setup */
+.col {
+	/* [disabled]border:0px solid rgba(0,0,0,0); */
+	float:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-moz-background-clip:padding-box !important;
+	-webkit-background-clip:padding-box !important;
+	background-clip:padding-box !important;
+}
+
+    @media screen and (min-width: 0px) and (max-width: 747px) {
+        
+        .col {
+	margin-left:1%;
+	/* [disabled]padding:0 0%; */
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+		}
+        
+        .span_1 {
+            width:49.5%;
+        }
+        .span_2, .sidebar, .date01, .date02, .branding, .rotator, .facebook, .featured, .footernav {
+            margin-left:0;
+            width:100%;
+        }
+		
+		/* Page Styles
+		------------------------------------------------------------ */
+
+.navwrap {
+	background-image:none;
+	}
+
+.navtab{
+            margin-left:0;
+            width:98%;
+        }
+
+		.topnav {
+	/* [disabled]position:fixed; */
+	width:100%;
+	top:0;
+	left:0;
+		}
+			
+		.wrapper {
+	/* [disabled]margin-top:11%; */
+		}
+		
+		.siteheader {
+	/* [disabled]margin-top: 11%; */
+}
+		
+		.mblshow {
+		display:block;	
+		}
+		
+		#navlist li.navhide {
+		display:none;	
+		}
+		
+		.mblhide {
+		display:none;
+		}
+		
+		#navlist li {
+    	margin-right: 0%;
+		}
+		
+		.pagefooter {
+			position: static;
+		}
+		
+				 #navlist {
+	padding-top:0%;
+}
+		
+		#navlist li a {
+	padding-bottom: 0em;
+}
+		
+    }
+
+    /* 2. 8 Column Grid 700px - 999px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    11.625%
+    Span 2:    24.25%
+    Span 3:    36.875%
+    Span 4:    49.5%
+    Span 5:    62.125%
+    Span 6:    74.75%
+    Span 7:    87.375%
+    Span 8:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 748px) and (max-width: 1000px) {
+        
+        .col {
+	margin-left:1%;
+	/* [disabled]padding:0 0%; */
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:11.625%;
+        }
+        .span_2, .date01, .date02 {
+            width:24.25%;
+        }
+        .span_3 {
+            width:36.875%;
+        }
+        .span_4, .branding, .facebook, .featured {
+            width:49.5%;
+        }
+        .span_5 {
+            width:62.125%;
+        }
+        .span_6 {
+            width:74.75%;
+        }
+        .span_7 {
+            width:87.375%;
+        }
+        .span_8, .sidebar, .rotator, .footernav {
+		margin-left:0;
+		width:100%;
+        }
+		
+		/* Page Styles
+		------------------------------------------------------------- */		
+		
+		.tblthide {
+		display:none;	
+		}
+		
+		.fb-date {
+	/* [disabled]display:none; */
+}
+		
+		.mainnav {
+		width:97%;	
+		}
+		
+		.wrapper {
+		padding-right: 6em;
+		padding-left: 6em;
+		}
+
+		.navtab {
+		width:48%;
+		float:left;
+		}
+
+		.pagefooter {
+	margin-right: 6em;
+	margin-left: 6em;
+	position: static;
+		}
+
+		.noleft {
+		margin-left: 0em;
+		}
+
+		.rotator {
+		margin-bottom:1%;
+		}
+		
+		.featured img {
+	/* [disabled]width:60%; */
+	/* [disabled]float:right; */
+	/* [disabled]margin-left:5%; */
+		}
+
+.featcap {
+	/* [disabled]width:34%; */
+	padding:3%;
+		}
+
+		 #navlist {
+	/* [disabled]padding-top:1.4em; */
+}
+
+#social .fblink {
+	padding-left: 8%;
+}
+
+#loginsearch a {
+	padding-right: 8%;
+}
+
+    }
+
+    @media screen and (min-width: 1000px) {
+        
+        .col {
+	margin-left:1%;
+	/* [disabled]padding:0 0%; */
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }   
+        
+        .span_1 {
+            width:7.41666666667%;
+        }
+        .span_2, .social {
+            width:15.8333333333%;
+        }
+        .span_3, .date01, .date02, .sidebar {
+            width:24.25%;
+        }
+        .span_4{
+            width:32.6666666667%;
+        }
+        .span_5{
+            width:41.0833333333%;
+        }
+        .span_6, .branding {
+            width:49.5%;
+        }
+        .span_7 {
+            width:57.9166666667%;
+        }
+        .span_8, .navlist {
+            width:66.3333333333%;
+        }
+        .span_9, .rotator {
+            width:74.75%;
+        }
+        .span_10, {
+            width:83.1666666667%;
+        }
+        .span_11 {
+            width:91.5833333333%;
+        }
+        .span_12, .facebook, .featured, .footernav, #facebook-feed {
+            margin-left:0;
+            width:100%;
+        }
+		
+/* Page Styles
+------------------------------------------------------------- */
+		
+		.blurb {
+            width:21%;
+        }
+		
+		.footernavlist{
+	width:70%;
+	float:right;
+	/* [disabled]overflow: hidden; */
+        }
+		
+		.firstlink {
+	/* [disabled]width:15%; */
+	float:right;
+	margin-top:2.5%;
+	/* [disabled]white-space:nowrap; */
+        }
+		
+		 .navtab {
+	width:23%;
+	float:left;
+		 }
+		 
+		 #navlist {
+	/* [disabled]padding-top:1.5em; */
+}
+
+		
+		.pagefooter {
+		width:100%;
+		}
+
+		.rotator {
+		float:right;	
+		left-margin:1%;
+		}
+
+		.sidebar {
+		float:left;
+		left-margin:0%;
+		}
+		
+		.featcap {
+	padding-top: 3%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+}
+
+#social .fblink {
+	padding-left: 0%;
+}
+
+    }
