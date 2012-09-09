@@ -1,5 +1,34 @@
+/*
+Author: New Materials
+Author URI: http://newmaterials.la/
+*/
+
+/*---------------------------------- */
+
+/*
+ *  TABLE OF CONTENTS
+ *
+ *	@FONT-FACE
+ *
+ *  @LAYOUT
+ *
+ *	@MEDIA QUERIES + GRID
+ *
+ *	@OTHER SHIT
+ *
+ */
+
+/*---------------------------------- */
+
+/* @FONT-FACE */
+
 @import url("fontello.css");
 @import url("fonts.css");
+
+/* MODULAR STYLESHEETS */
+@import url("navigation.css");
+@import url("gridpak.css");
+@import url("flexslider.css");
 
 body {
 	font-family: ApercuBold, helvetica, arial;
@@ -36,7 +65,12 @@ display:none;
 	/* [disabled]margin-bottom: 1.5%; */
 }
 
-.wrapper {
+#wrapper {
+	max-width:960px;
+	margin: 0px auto;
+}
+
+#page_content {
 	max-width:960px;
 	margin-right: auto;
 	margin-left: auto;
@@ -535,6 +569,81 @@ display:none;
 	
 	*/
 
+/*facebook stuff
+------------------------------------*/
+
+
+#facebook-feed {
+	/* [disabled]width:286px; */
+	/* [disabled]margin:30px; */
+}
+
+#facebook-feed ul {
+    list-style-type:none;
+}
+
+#facebook-feed li {
+    display:block;
+}
+
+#feed-holder a,.linkbox img {
+    float:left;    
+}
+
+.linkbox img {
+    margin-right:1em;    
+}
+
+#feed-holder a {
+    text-decoration:none;
+    color:#000;
+}
+
+#facebook-feed {
+	/* [disabled]padding-right:3em; */
+}
+
+.linkbox {
+	min-height:45px;
+	padding-bottom: 0.6em;
+	padding-left: 0.8px;
+	padding-right: 0.8px;
+	padding-top: 0.6em;
+}
+
+.fb-title, .fb-date {
+	font-size:1em;
+	line-height:1em;
+	color:#999;
+	/* [disabled]width:240px; */
+	font-weight:normal;
+	margin-left:5px;
+}
+
+
+.fb-date {
+    font-weight:normal;
+    color:#FC3C6A;
+	margin-bottom:.5em;
+}
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.fblinkage {
+	display:block;
+	margin-top:0.75em;
+	/* [disabled]margin-left:1em; */
+	color: #F69;
+}
+
+.fblinkage a {
+	color: #F69;	
+}
+
+/*end facebook stuff
+------------------------------------*/
 
 /*Nav stuff
 ------------------------------------*/
@@ -547,10 +656,9 @@ display:none;
 	margin-left: auto;
 	position: relative;
 }
-
+/*
 #navlist {
 	width:70%;
-	/* [disabled]background-color:#CC6; */
 	float:left;
 	margin-left:auto;
 	margin-right:auto;
@@ -560,6 +668,7 @@ display:none;
 	padding-top:1.55em;
 	margin-bottom: 1%;
 }
+*/
 
 #navlist li {
 	display: inline;
@@ -685,92 +794,6 @@ display: none;
 /************************************************************************************
 Search
 *************************************************************************************/
-
-/* reset webkit search input browser style */
-input {
-	outline: none;
-	border: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	/* [disabled]margin-top:3px; */
-}
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 1.6em;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	display: none; /* remove the search and cancel icon */
-}
-
-/* search input field */
-input[type=search] {
-	/* [disabled]width: 55px; */
-	/*-webkit-border-radius: 10em;*/
-	/*-moz-border-radius: 10em;*/
-	/*border-radius: 10em;*/
-	
-	-webkit-transition: width .5s;
-	-moz-transition: width .5s;
-	transition: width .5s;
-	padding-top: 9px;
-	/* [disabled]padding-right: 10px; */
-	padding-bottom: 4px;
-	/* [disabled]padding-left: 32px; */
-	background-color: #FC3C6A;
-	background-image: url(../images/search.svg);
-	background-repeat: no-repeat;
-	background-position: 2px 9px;
-}
-input[type=search]:focus {
-	/*width: 130px;*/
-	/*background-color: #fff;*/
-	/*border-color: #6dcff6;*/
-	
-	/*-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);*/
-	/*-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);8*/
-	/*box-shadow: 0 0 5px rgba(109,207,246,.5);*/
-}
-
-/* placeholder */
-input:-moz-placeholder {
-	/*color: #999;*/
-}
-input::-webkit-input-placeholder {
-	/*color: #999;*/
-}
-
-/* demo B */
-input[type=search] {
-	/*float: right;*/
-	width: 18px;
-	/* [disabled]padding-left: 6px; */
-	color: transparent;
-	cursor: pointer;
-	-webkit-transition: width .1s;
-	-moz-transition: width .1s;
-	transition: width .1s;
-}
-input[type=search]:hover {
-	/*background-color: #fff;*/
-}
-input[type=search]:focus {
-	width: 98%;
-	max-width:960px;
-	padding-left: 25px;
-	color: #fff;
-	background-color: #FC3C6A;
-	cursor: auto;
-}
-input:-moz-placeholder {
-	color: transparent;
-}
-input::-webkit-input-placeholder {
-	color: transparent;
-}
 
 
 /************************************************************************************

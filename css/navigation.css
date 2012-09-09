@@ -1,0 +1,313 @@
+/*
+Author: New Materials
+Author URI: http://newmaterials.la/
+*/
+
+/*---------------------------------- */
+
+/*
+ *  TABLE OF CONTENTS:;
+ *
+ *  DRAWER/DROPDOWN 
+ *
+ *  LOGIN FORM
+ *
+ *  TOP NAVIGATION
+ *
+ *  SOCIAL LINKS
+ *
+ *  MAIN NAV
+ *
+ *  LOGIN LINK
+ *
+ *  SEARCH FORM
+ *
+ */
+
+/*---------------------------------- */
+/* DRAWER/DROPDOWN */
+/*---------------------------------- */
+
+#drawerwrap {
+    background-color: #FDE1E8;
+    height:0px;
+    width:100%;
+    overflow:hidden;
+}
+
+#drawer {
+    max-width: 960px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#drawerclose {
+    position:absolute;
+    top:1.5em;
+    right:0;
+    display:block;
+    width:25px;
+    height:25px;
+    background-color:red;
+    cursor: pointer;
+}
+
+
+#drawer .fb, #drawer .twit, #drawer .login {
+display:none;
+}
+
+#drawer li{
+    padding:1.5em 0px;
+    height:auto;
+    overflow:hidden;
+}
+
+#drawer h2 a{
+    font-size: 1.7em;
+    text-decoration: underline;
+    color: #fc3c6a;
+    margin-bottom:.8em;
+    display:inline-block;
+}
+
+#drawer li p{
+    font-family: ApercuRegular, helvetica, arial, sans-serif;
+    font-size: 1.4em;
+    color: #fc3c6a;
+}
+
+#drawer li p a{
+    font-family: ApercuBold, helvetica, arial, sans-serif;
+    text-decoration:none;
+    color: #fc3c6a;
+}
+
+/*---------------------------------- */
+/* LOGIN */
+/*---------------------------------- */
+
+#drawer input {
+ outline:none;
+}
+
+#drawer form{
+float:right;
+}
+
+#drawer div.support p, #drawer div.registration p{
+    font-family: ApercuRegular, helvetica, arial, sans-serif;
+    font-size: 1.2em;
+    color:#0f5a37;
+    line-height: 1.2em;
+}
+
+#drawer input.submit {
+    font-family: ApercuBold, helvetica, arial, sans-serif;
+    background: #0f5a37;
+    font-size:  1.3em;
+    color: #fff;
+    padding: 5px 8px 4px 8px;
+    border: 1px solid #0f5a37;
+}
+
+.logininfo{
+    float: left;
+    width:50%;
+    overflow:hidden;
+}
+
+.support, .registration{
+    float:left;
+    width:50%;
+}
+
+.support h3, .registration h3 {
+    font-family: ApercuBold, helvetica, arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom:.2em;
+    color:#0f5a37;
+}
+
+.loginform {
+    float:left;
+    width:50%;
+    overflow: hidden;
+}
+
+.user, .password {
+     font-family: ApercuRegular, helvetica, arial, sans-serif;
+     font-size:  1.4em;
+     border: 1px solid #0f5a37;
+     padding: 4px 4px 4px 4px;
+     margin-right: .8em;
+     width:13em;
+}
+
+/*---------------------------------- */
+/* TOP NAVIGATION */
+/*---------------------------------- */
+
+#topnav {
+	background-color: #fc3c6a;
+	height: 3.8em;
+}
+
+
+#mblnav {
+    display: none;
+}
+
+/*---------------------------------- */
+/* SOCIAL LINKS */
+/*---------------------------------- */
+
+#sociallinks {
+    width: 15%;
+    float:left;
+    padding-top: .1em;
+}
+
+#sociallinks a {
+    display: block;
+    height:2.6em;
+    float: left;
+    margin-top: 1em;
+}
+
+#fblink {
+    width: 2em;
+    background-image: url(../images/icon_facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 45% auto;
+}
+
+#twitlink {
+    width: 3em;
+    background-image: url(../images/icon_twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 73% auto;
+}
+
+/*---------------------------------- */
+/* MAIN NAV */
+/*---------------------------------- */
+
+#mainnav{
+    max-width: 96em;
+    margin: 0em auto;
+    clear:both;
+    position: relative;
+}
+
+#navlist {
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 1.4em;
+}
+
+#navlist li {
+    display: inline;
+    margin-right: 3.7%;
+}
+
+#navlist li:last-child {
+    margin-right: 0%;
+}
+
+#navlist li a {
+    font-size: 1.4em;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*---------------------------------- */
+/* LOGIN LINK*/
+/*---------------------------------- */
+
+#login {
+    width:15%;
+    float: left;
+    text-align:right;
+    margin-top: 1.1em;
+    overflow: hidden;
+}
+
+#login a {
+    font-size: 1.4em;
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: .8em;
+    padding-top:.17em;
+    padding-bottom:.1em;
+    border-right: .1em solid #FFF;
+    margin-right:1.8em;
+}
+
+/*---------------------------------- */
+/* SEARCH */
+/*---------------------------------- */
+
+#mainnav input {
+    outline: none;
+    border: none;
+    position: absolute;
+    margin:0;
+    padding:0;
+    top: 0;
+    right: 0;
+    display: inline;
+    margin-top: .3em;
+}
+
+/* removes the search and cancel icon */
+#mainnav input::-webkit-search-decoration,
+#mainnav input::-webkit-search-cancel-button {
+    display: none; 
+}
+
+#mainnav input:-moz-placeholder {
+    color: transparent;
+}
+#mainnav input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+#mainnav input[type=search] {
+
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    /*-webkit-transition: width .5s;
+    -moz-transition: width .5s;
+    transition: width .5s;*/
+    font-family: inherit;
+    font-size: 1.6em;
+    background-color: #FC3C6A;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: .4em .45em;
+    width: 1em;
+    color: transparent;
+    cursor: pointer;
+    padding:.2em;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+#mainnav input[type=search]:focus {
+    width: 98%;
+    max-width:960px;
+    padding-left: 25px;
+    color: #fff;
+    background-color: #FC3C6A;
+    cursor: auto;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+

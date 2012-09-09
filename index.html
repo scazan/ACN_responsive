@@ -3,352 +3,141 @@
 <!--**************Head Tag Information**************-->
 <head>
 <!--**************Meta Tag Information**************-->
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="keywords" content="Some, Keywords, About, Your, Site">
-<meta name="description" content="Description of your site, about 3 sentences using the keywords to describe your site.">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Art Center College of Design is recognized as one of the world's foremost institutions for art and design education. It has assumed a leadership role in the development of new digital media">
+<meta name="keywords" content="Art Center College of Design, Art Center College, Art Center, ACCD, Art Centre, Art Center At Night, ACN, education, design, design education, Pasadena, Los Angeles, Southern California, gallery, university, galleries, schools, modern art, contemporary art, digital art, computer art, industrial design, illustration, fine art, automobile design, film, photography, graphic design, product design, transportation design, environmental design, advertising, graduate programs, undergraduate programs, Pasadena School of Design, Pasadena Arts Center, Pasadena Design Center, night school, extension courses, college, admissions, financial aid">
 
+<!--Make it work with Chrome Frame-->
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<!--stops the mobile browser zoom, and preps for mobile mode-->
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no"/>
-
+<!--User can save to home screen and run as full screen web app-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--detects phone numbers, makes link, and iphone will dial them when clicked-->
+<meta name="format-detection" content="telephone=yes">
+<!--Icons for every device, smallest is 57x57-->
+<link rel="apple-touch-icon-precomposed" href="apple-touch-iphone.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-ipad.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-iphone4.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-ipad-retina.png" />
 <!--**************Page Title**************-->
-<title>HTML 5 Template</title>
-
+<title>ART CENTER AT NIGHT</title>
+<!--**************Favicon**************-->
 <link rel="shortcut icon" href="favicon.ico"/>
-
+<!--**************Style Sheets**************-->
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/gridpak.css" rel="stylesheet" type="text/css">
-<link href="css/flexslider.css" rel="stylesheet" type="text/css">
-
+<!--**************Make IE display HTML5 elements**************-->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
+<!--**************Javascript and jQuery**************-->
 <!--Include most recent version of jquery up to 1.9.9-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--Plugin for dropdown menu on touch screen-->
 <script src="js/make_dropdown.js" type="text/javascript"></script>
+<!--Plugin for the responsive slider-->
 <script defer src="js/jquery.flexslider.js"></script>
-
-<script type="text/javascript">
- 
- $(document).ready(function() {
-	 
-	 	     
-	 	 		 
-		  function disableLink(e) {
-    // cancels the event
-    e.preventDefault();
-
-    return false;
-}
-
-		 
-$(window).bind('load resize orientationchange', function(){   
-	  
-var windowWidth = $(window).width();
-
-		if (windowWidth < 700) {
-				//$("#navlist li .first").click(function(event) { return true; });
-				//$('#navlist li .first').unbind('click', disableLink);
-				$("#navlist li .first").attr('href', 'http://www.google.com/')
-
-
-				
-		}
-		else if(windowWidth > 700 && windowWidth < 1000){
-
-				$("#navlist li .first").attr('href', '#')
-				
-				 //For loading of the Facebook feed, using Yahoo! Pipes for cross-domain functionality.
-    $.ajax({
-        type: "GET",
-        url: "http://pipes.yahoo.com/pipes/pipe.run?_id=5c29f5837f7962720b67f40cea28b3ac&_render=rss",
-        dataType: "xml",
-        success: function(xml) {
-            $('#feed-holder').html('<ul></ul>');
-            for(i = 0;i<4;i++){
-                var $rssItem = $(xml).find('item:eq('+i+')');
-                var title = $rssItem.find('title').text();
-                var link = $rssItem.find('link').text();
-                var date = $rssItem.find('pubDate').text();
-                //date = date.replace(/\,/g,''); 
-                var date_array = date.split(" ");
-                var date_string = date_array.remove(-2,-1);
-                
-                
-                $('#feed-holder ul').append('<li> <a href="' + link + '" target="_blank"><div class="linkbox"><div class="fb-date">'+ date_array.join(' ') +'</div><div class="fb-title">' + title + '</div></a></li><div class="clearfix"></div>');        
-            }
-             
-            
-        }
-    });//end of facebook
-
-		} else {
-		
-					$("#navlist li .first").attr('href', '#')
-				
-				 //For loading of the Facebook feed, using Yahoo! Pipes for cross-domain functionality.
-    $.ajax({
-        type: "GET",
-        url: "http://pipes.yahoo.com/pipes/pipe.run?_id=5c29f5837f7962720b67f40cea28b3ac&_render=rss",
-        dataType: "xml",
-        success: function(xml) {
-            $('#feed-holder').html('<ul></ul>');
-            for(i = 0;i<3;i++){
-                var $rssItem = $(xml).find('item:eq('+i+')');
-                var title = $rssItem.find('title').text();
-                var link = $rssItem.find('link').text();
-                var date = $rssItem.find('pubDate').text();
-                //date = date.replace(/\,/g,'');
-                var date_array = date.split(" ");
-                var date_string = date_array.remove(-2,-1);
-                
-                
-                $('#feed-holder ul').append('<li> <a href="' + link + '" target="_blank"><div class="linkbox"><div class="fb-date">'+ date_array.join(' ') +'</div><div class="fb-title">' + title + '</div></a></li><div class="clearfix"></div>');        
-            }
-             
-            
-        }
-    });//end of facebook
-		
-			
-		}//end of else
-
-   });
-		 
-			/* toggle nav */
-		$("#mblnav").on("click", function(){
-		$("#navlist").slideToggle();
-		$(this).toggleClass("active");
-	});
-	
-$('#navlist > li').make_dropdown();
-
- $('.flexslider').flexslider({
-        animation: "slide",
-		controlNav: true,
-		slideshowSpeed: 4500,
-		animationDuration: 80,
-		pauseOnAction: false, 
-		touch: true, 
-		slideshow:true,
-		pauseOnAction: false,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-	  
-});/*end document ready function*/
-		
-		// Array Remove - By John Resig (MIT Licensed)
-Array.prototype.remove = function(from, to) {
-  var rest = this.slice((to || from) + 1 || this.length);
-  this.length = from < 0 ? this.length + from : from;
-  return this.push.apply(this, rest);
-};
-
-function setEqualHeight(columns)
- {
- var tallestcolumn = 0;
- columns.each(
- function()
- {
- currentHeight = $(this).height();
- if(currentHeight > tallestcolumn)
- {
- tallestcolumn  = currentHeight;
- }
- }
- );
- columns.height(tallestcolumn);
- }
-$(document).ready(function() {
- setEqualHeight($(".container  > div"));
-});
-
-			
-</script>
-
-
-<style type="text/css">
-
-#facebook-feed {
-	/* [disabled]width:286px; */
-	/* [disabled]margin:30px; */
-}
-
-#facebook-feed ul {
-    list-style-type:none;
-}
-
-#facebook-feed li {
-    display:block;
-}
-
-#feed-holder a,.linkbox img {
-    float:left;    
-}
-
-.linkbox img {
-    margin-right:1em;    
-}
-
-#feed-holder a {
-    text-decoration:none;
-    color:#000;
-}
-
-#facebook-feed {
-	/* [disabled]padding-right:3em; */
-}
-
-.linkbox {
-	min-height:45px;
-	padding-bottom: 0.6em;
-	padding-left: 0.8px;
-	padding-right: 0.8px;
-	padding-top: 0.6em;
-}
-.fb-title, .fb-date {
-	font-size:1em;
-	line-height:1em;
-	color:#999;
-	/* [disabled]width:240px; */
-	font-weight:normal;
-	margin-left:5px;
-}
-
-
-.fb-date {
-    font-weight:normal;
-    color:#FC3C6A;
-	margin-bottom:.5em;
-}
-
-
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-.fblinkage {
-	display:block;
-	margin-top:0.75em;
-	/* [disabled]margin-left:1em; */
-	color: #F69;
-}
-
-.fblinkage a {
-	color: #F69;	
-}
-
-</style>
+<!--**************Other Plugins**************-->
+<script src="js/plugins.js"></script>
+<!--**************Main jQuery**************-->
+<script src="js/main.js"></script>
 
 </head>
 
 <body>
+<!--**************dropdown header**************-->
+	<div id="top-bar">
+		
+		<div id="drawerwrap">
 
-<header class="topheader">Hidden</header>
+			<div id="drawer">
+				<a id="drawerclose"><span class="hide">Closer</span></a>
+				<ul>
 
-<header class="topnav">
+					<li class="fb">
+						<h2><a href="https://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387?ref=ts" target="_blank">Join us on Facebook</a></h2>
+						<p>Something related to Facebook</p>
+					</li>
+					<li class="twit">
+						<h2><a href="https://twitter.com/janchip" target="_blank">Follow us on Twitter</a></h2>
+						<p>Today's Office: If you could revisit any conversation what would you say? <a href="http://www.google.com">http://bit.ly/to_heavingto</a></p>
+						<p>> More Tweets</p>
+					</li>
+					<li class="login">
+						<h2><a href="#">Login</a></h2>
+						
+						<div class="logininfo">
+						
+						<div class="support">
+						<h3>Need Help with your Login?</h3>
+						<p>Contact the Help Desk at:<br />sctech@artcenter.edu or 626.396.4234</p>
+						</div>
+						
+						<div class="registration">
+						<h3>Registration Questions?</h3>
+						<p>Contact Public Programs: 626.396.2319</p>
+						</div>
+						
+						</div>
 
-<nav class="mainnav">
+						<div class="loginform">
+							<form>
+	            				<input type="text" name="username" placeholder="Username" class="user" />
+	            				<input type="password" name="password" placeholder="Password" class="user" />
+	            				<input type="submit" value="Login" name="submit" class="submit" />
+							</form>
+						</div>
+					</li>
 
-<div id="mblnav"><i class="icon-th-list"></i></div>
+				</ul>
 
-<div id="social">
+			</div><!--end drawer-->
 
-<a href="#" class="fblink"><i class="icon-facebook"></i><span class="hide">Facebook</span></a>
-<a href="#"><i class="icon-twitter-bird"></i><span class="hide">Twitter</span></a>
+		</div><!--end drawerwrap-->
 
-</div>
+<!--**************end dropdown header**************-->
 
-<ul id="navlist">
-<li><a href="#"  class="first">About Us</a>
+		<div id="topnav">
 
-	<ul>
-		<li><a href="http://www.google.com">What is ACN?</a></li>
-        <li><a href="#">Public Programs</a></li>
-		<li><a href="#">Art Center</a></li>
-		<li><a href="#">Scholarship Donors</a></li>
-		<li><a href="#">Partners</a></li>
-		<li><a href="#" class="last">Support ACN</a></li>
-	</ul>
-    
-</li>
-<li><a href="http://www.google.com" class="first">Explore</a>
+			<nav id="mainnav">
 
-	<ul>
-		<li><a href="http://www.google.com">Portfolio Prep</a></li>
-        <li><a href="#">Courses</a></li>
-		<li><a href="#">Faculty</a></li>
-		<li><a href="#">Students</a></li>
-		<li><a href="#">Gallery</a></li>
-		<li><a href="#" class="last">Catalog Download</a></li>
-	</ul>
+				<div id="mblnav"></div>
 
-</li>
-<li><a href="http://www.google.com" class="first">Register</a>
-	<ul>
-		<li><a href="http://www.google.com">Register Now</a></li>
-        <li><a href="#">How to Register</a></li>
-		<li><a href="#">Courses</a></li>
-		<li><a href="#" class="last">Tuition</a></li>
-	</ul>
-</li>
-<li>
-  <ul>
-    <li><a href="#">Courses</a></li>
-    <li><a href="#" class="last">Tuition</a></li>
-  </ul>
-</li>
-<li><a href="http://www.google.com" class="first">Need to Know</a>
-	<ul>
-		<li><a href="http://www.google.com">Accomodations</a></li>
-        <li><a href="#">Student I.D.</a></li>
-		<li><a href="#">Parking</a></li>
-		<li><a href="#">Campus Info</a></li>
-		<li><a href="#">Policies and Procedures</a></li>
-		<li><a href="#" class="last">FAQ</a></li>
-	</ul>
-</li>
-<li class="navhide"><a href="http://www.google.com" class="first">My Account</a>
-<ul>
-		<li><a href="http://www.google.com">My Schedule</a></li>
-        <li><a href="#">Add/Drop Classes</a></li>
-		<li><a href="#">Account Summary</a></li>
-		<li><a href="#">My Grades</a></li>
-		<li><a href="#">My Transcript</a></li>
-		<li><a href="#">My 1098-T</a></li>
-        <li><a href="#">My Contact Info</a></li>
-        <li><a href="#" class="last">My Password</a></li>
-	</ul>
-</li>
-<li class="last"><a href="http://www.google.com" class="first">Contact Us</a>
-	<ul>
-		<li><a href="http://www.google.com">Contact Info</a></li>
-        <li><a href="#">Staff</a></li>
-		<li><a href="#">Visiting Us</a></li>
-		<li><a href="#" class="last">Request Catalog</a></li>
-	</ul>
-</li>
-</ul>
+				<div id="sociallinks" class="mblhide">
 
-<div id="loginsearch">
-<a href="#" class="loginlink showit">Login</a>
-</div>
+					<a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" id="fblink" class="triggerdown"><span class="hide">Facebook</span></a>
+					<a href="https://twitter.com/janchip" id="twitlink" class="triggerdown"><span class="hide">Twitter</span></a>
 
+				</div>
 
- <form>
-	<input type="search" class="mblhide">
-</form>
+				<ul id="navlist">
+					<li><a href="#" class="first">About Us</a></li>
+					<li><a href="#" class="first">Explore</a></li>
+					<li><a href="#" class="first">Register</a></li>
+					<li><a href="#" class="first">Need to Know</a></li>
+					<li><a href="#" class="first">My Account</a></li>
+					<li><a href="#" class="first">Contact Us</a></li>
+				</ul>
 
+				<div id="login" class="mblhide">
+					<a href="#" id="loginlink" class="triggerdown">Login</a>
+				</div>
 
-</nav>
+				<form>
+					<input type="search">
+				</form>
 
-</header>
+			</nav>
 
-<div class="wrapper">
+		</div><!--end topnav-->
 
+	</div><!--end topbar-->
+<!--**************end navigation**********-->
+
+<div id="wrapper">
 <header class="siteheader row">
 <div class="date01 col mblhide">
 
@@ -478,6 +267,7 @@ $(document).ready(function() {
 </div><!--end footer nav-->
 
 </div><!--end wrapper-->
+
 
 <footer class="pagefooter row">
 
