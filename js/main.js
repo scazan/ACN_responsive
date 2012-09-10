@@ -6,7 +6,9 @@ function disableLink(e) {
 
     return false;
 }
-  
+ 
+////////// Write first link on mobile to the page , turn of on desktop and tablet
+
 $(window).bind('load resize orientationchange', function(){   
       
 var windowWidth = $(window).width();
@@ -27,8 +29,9 @@ var windowWidth = $(window).width();
    });
 
 
-//load facebook facebook status updates
-//For loading of the Facebook feed, using Yahoo! Pipes for cross-domain functionality.
+////////// Load facebook facebook status updates
+////////// For loading of the Facebook feed, using Yahoo! Pipes for cross-domain functionality.
+
     $.ajax({
         type: "GET",
         url: "http://pipes.yahoo.com/pipes/pipe.run?_id=5c29f5837f7962720b67f40cea28b3ac&_render=rss",
@@ -51,7 +54,7 @@ var windowWidth = $(window).width();
     });
 //end of facebook
          
-/* toggle nav */
+/* toggle nav for mobile */
         $("#mblnav").on("click", function(){
         $("#navlist").slideToggle();
         $(this).toggleClass("active");

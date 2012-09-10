@@ -709,14 +709,12 @@ display:none;
 #navlist ul {
 	display:none;
 	position:absolute;
-	top:21px;
 	left:0px;
+	margin-top:.2em;
 	text-align:left;
 	background-color: #FDE1E8;
 	width: auto;
-	/* [disabled]padding-top: 2px; */
 	padding-right: 10px;
-	/* [disabled]padding-bottom: 3px; */
 	padding-left: 10px;
 	z-index:1000;
 }
@@ -733,8 +731,6 @@ display:none;
 #loginsearch a {
 	color: #FFF;
 	text-decoration: none;
-	/* [disabled]display: block; */
-	/* [disabled]margin-right: 8%; */
 }
 
 #social a {
