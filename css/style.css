@@ -808,9 +808,22 @@ MOBILE
 
 	/* menu icon */
 	#mblnav {
+		height:1.2em;
+		width:2em;
+		margin-top: .18em;
+		margin-right: .5em;
 		cursor: pointer;
 		display: block; /* show menu icon */
 		float:right;
+		border:1px solid #382D2C;
+		-moz-border-radius: .2em;
+		-webkit-border-radius: .2em;
+		border-radius: .2em;
+		background-image:url('../images/mblnav_bg.svg');
+		background-repeat: no-repeat;
+		background-size: 80% auto;
+		background-position: center .07em;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 	}
 	
 	/* main nav */
