@@ -6,7 +6,7 @@ Author URI: http://newmaterials.la/
 /*---------------------------------- */
 
 /*
- *  TABLE OF CONTENTS:;
+ *  TABLE OF CONTENTS:
  *
  *  DRAWER/DROPDOWN 
  *
@@ -52,7 +52,6 @@ Author URI: http://newmaterials.la/
     background-color:red;
     cursor: pointer;
 }
-
 
 #drawer .fb, #drawer .twit, #drawer .login {
 display:none;

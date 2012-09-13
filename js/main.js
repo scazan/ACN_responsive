@@ -76,6 +76,12 @@ $('#navlist > li').make_dropdown();
         }
       });
 
+//////////Make the whole footernav navtabs clickable/////////
+ $(".navtab").click(function(){
+     window.location=$(this).find("a").attr("href"); 
+     return false;
+});
+
 //////////Code for the top header up and down//////////
 
    $('.triggerdown').click(function(){

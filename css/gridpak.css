@@ -28,7 +28,7 @@
         .span_1 {
             width:49.5%;
         }
-        .span_2, .sidebar, .date01, .date02, .branding, .rotator, .facebook, .featured, .footernav {
+        .span_2, .sidebar, #date01, #date02, #branding, .rotator, #facebookfeed, #featured, .footernav {
             margin-left:0;
             width:100%;
         }
@@ -46,7 +46,7 @@
 
 .navtab{
             margin-left:0;
-            width:98%;
+            width:100%;
         }
 
 		.topnav {
@@ -114,13 +114,13 @@
         .span_1 {
             width:11.625%;
         }
-        .span_2, .date01, .date02 {
+        .span_2, #date01, #date02 {
             width:24.25%;
         }
         .span_3 {
             width:36.875%;
         }
-        .span_4, .branding, .facebook, .featured {
+        .span_4, #branding, #facebookfeed, #featured {
             width:49.5%;
         }
         .span_5 {
@@ -176,7 +176,7 @@
 		}
 
 		.navtab {
-		width:48%;
+		width:50%;
 		float:left;
 		}
 
@@ -194,7 +194,7 @@
 		margin-bottom:1%;
 		}
 		
-		.featured img {
+		#featured img {
 	/* [disabled]width:60%; */
 	/* [disabled]float:right; */
 	/* [disabled]margin-left:5%; */
@@ -240,7 +240,7 @@
         .span_2, .social {
             width:15.8333333333%;
         }
-        .span_3, .date01, .date02, .sidebar {
+        .span_3, #date01, #date02, .sidebar {
             width:24.25%;
         }
         .span_4{
@@ -249,7 +249,7 @@
         .span_5{
             width:41.0833333333%;
         }
-        .span_6, .branding {
+        .span_6, #branding {
             width:49.5%;
         }
         .span_7 {
@@ -267,7 +267,7 @@
         .span_11 {
             width:91.5833333333%;
         }
-        .span_12, .facebook, .featured, .footernav, #facebook-feed {
+        .span_12, #facebookfeed, #featured, .footernav, #facebook-feed {
             margin-left:0;
             width:100%;
         }
@@ -276,13 +276,7 @@
 ------------------------------------------------------------- */
 		
 		.blurb {
-            width:21%;
-        }
-		
-		.footernavlist{
-	width:70%;
-	float:right;
-	/* [disabled]overflow: hidden; */
+            width:19%;
         }
 		
 		.firstlink {
@@ -293,7 +287,7 @@
         }
 		
 		 .navtab {
-	width:23%;
+	width:25%;
 	float:left;
 		 }
 		 
