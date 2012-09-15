@@ -175,12 +175,136 @@ h1 a{
 }
 
 /*---------------------------------- */
+/* PAGE SIDE MENU */
+/*---------------------------------- */
+
+#sidemenu {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #0F5A37;
+	margin-bottom: .9em;
+	padding-bottom: .75em;
+}
+
+#sidemenu h2 {
+	background-color: #FEEFF2;
+	text-decoration: underline;
+	font-size: 1.4em;
+	color: #FC3C6A;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+}
+
+#pagemenu {
+	display:block;
+	margin-top:4%;
+	padding-left:1.6em;
+}
+
+#pagemenu li {
+
+	margin-bottom:.7em;
+}
+
+#pagemenu li a{
+
+	text-decoration: none;
+	font-size: 1.4em;
+	color: #FC3C6A;
+}
+
+/*---------------------------------- */
+/* PAGE COLUMNS */
+/*---------------------------------- */
+
+#centercol{
+height:auto;
+padding:0% 1%;
+}
+
+#centercol h1{
+	text-decoration: underline;
+	font-size: 2em;
+	color: #FC3C6A;
+	padding-bottom:2%;
+	text-align: center;
+	display:block;
+}
+
+#centercol h2{
+	font-size: 1.4em;
+	color: #0f5a37;
+	padding-bottom:1.25%;
+}
+
+#centercol h3{
+	font-size: 1.5em;
+	color: #FC3C6A;
+	padding-bottom:1%;
+}
+
+#centercol h4{
+	font-size: 1.2em;
+	color: #0f5a37;
+	padding-bottom:1%;
+}
+
+#centercol p{
+	font-size: 1.2em;
+	color: #0f5a37;
+	text-align: left;
+	margin-bottom:4%;
+	font-family: ApercuRegular, helvetica, arial;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+#centercol a{
+	color: #0f5a37;
+	text-decoration:underline;
+}
+
+#centercol #col01{
+
+}
+
+#centercol #col02{
+
+}
+
+#rightcol{
+	height:300px;
+	margin-top:3.25%;
+}
+
+#rightcol h1{
+	font-size: 1.5em;
+	color: #FC3C6A;
+	padding-bottom:5%;
+}
+
+#rightcol p{
+	font-size: 1.2em;
+	color: #0f5a37;
+	text-align: left;
+	margin-bottom:4%;
+	font-family: ApercuRegular, helvetica, arial;
+	line-height: 1.4em;
+}
+
+#rightcol a{
+	color: #0f5a37;
+	text-decoration:underline;
+}
+
+/*---------------------------------- */
 /* FOOTER NAV */
 /*---------------------------------- */
 .navtab {
 	height: 7.5em;
 	background-color: #FDE1E8;
-	/*padding-left: 2%;*/
+	margin-bottom:.5%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	cursor:pointer;
@@ -193,6 +317,7 @@ h1 a{
 	background-position: right;
 	height: 7.5em;
 	padding-right: 8%;
+	overflow:hidden;
 }
 .navtab h3 a{
 	font-size: 1.1em;

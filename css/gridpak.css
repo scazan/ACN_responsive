@@ -240,7 +240,7 @@
         .span_2, .social {
             width:15.8333333333%;
         }
-        .span_3, #date01, #date02, .sidebar {
+        .span_3, #date01, #date02, .sidebar, #rightcol {
             width:24.25%;
         }
         .span_4{
@@ -249,7 +249,7 @@
         .span_5{
             width:41.0833333333%;
         }
-        .span_6, #branding {
+        .span_6, #branding, #centercol, #col01, #col02 {
             width:49.5%;
         }
         .span_7 {
@@ -267,7 +267,7 @@
         .span_11 {
             width:91.5833333333%;
         }
-        .span_12, #facebookfeed, #featured, .footernav, #facebook-feed {
+        .span_12, #facebookfeed, #featured, #sidemenu, .footernav, #facebook-feed {
             margin-left:0;
             width:100%;
         }
