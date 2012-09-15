@@ -495,22 +495,22 @@ PAGEFOOTER
 	float:right;
 }
 
-.aboutus{
+#aboutus{
 float:left;
 margin-right:8%;
 }
 
-.explore {
+#explore {
 float:left;
 margin-right:8%;
 }
 
-.connect {
+#connect {
 float:left;
 margin-right:8%;
 }
 
-.contactus{
+#contactus{
 float:left;
 }
 
