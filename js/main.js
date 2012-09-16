@@ -7,7 +7,7 @@ function disableLink(e) {
     return false;
 }
  
-////////// Write first link on mobile to the page , turn of on desktop and tablet
+////////// Write first link on mobile to the page , turn off on desktop and tablet
 
 $(window).bind('load resize orientationchange', function(){   
       
@@ -86,27 +86,27 @@ $('#navlist > li').make_dropdown();
 
    $('.triggerdown').click(function(){
         $('#drawerwrap').animate({height:'10.5em'}, 500);
-        $('#fblink').removeClass('triggerdown');
-        $('#twitlink').removeClass('triggerdown');
+        //$('#fblink').removeClass('triggerdown');
+        //$('#twitlink').removeClass('triggerdown');
         $('#loginlink').removeClass('triggerdown');
     })
 
 
     $('.triggerup').live('click', function() {
         $('#drawerwrap').animate({height:'0em'}, 500);
-        $('#fb').addClass('trigger');
-        $('#twit').addClass('trigger');
+        //$('#fb').addClass('trigger');
+        //$('#twit').addClass('trigger');
         $('#loginlink').addClass('trigger');
     });
 
      $('#drawerclose').live('click', function() {
         $('#drawerwrap').animate({height:'0em'}, 500);
-        $('#fb').addClass('trigger');
-        $('#twit').addClass('trigger');
+        //$('#fb').addClass('trigger');
+        //$('#twit').addClass('trigger');
         $('#loginlink').addClass('trigger');
     });
 
-    $('#fblink').click(function(){
+    /*$('#fblink').click(function(){
         $('.fb').css("display","list-item");
         $('.twit').css("display","none");
         $('.login').css("display","none");
@@ -119,6 +119,7 @@ $('#navlist > li').make_dropdown();
         $('.login').css("display","none");
         return false;
     })
+    */
 
     $('#login').click(function(){
         $('.fb').css("display","none");

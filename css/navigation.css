@@ -49,8 +49,11 @@ Author URI: http://newmaterials.la/
     display:block;
     width:25px;
     height:25px;
-    background-color:red;
     cursor: pointer;
+    background-image: url(../images/icon_closer.svg);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: top right;
 }
 
 #drawer .fb, #drawer .twit, #drawer .login {
