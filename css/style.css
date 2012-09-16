@@ -274,7 +274,7 @@ padding:0% 1%;
 }
 
 #rightcol{
-	height:300px;
+	height:auto;
 	margin-top:3.25%;
 }
 
@@ -296,6 +296,209 @@ padding:0% 1%;
 #rightcol a{
 	color: #0f5a37;
 	text-decoration:underline;
+}
+
+/*---------------------------------- */
+/* FACULTY PAGE CONTENT */
+/*---------------------------------- */
+#facultylist li ul{
+	border-top:1px solid #0f5a37;
+	border-bottom:1px solid #0f5a37;
+	margin-top:.5em;
+	margin-bottom:.5em;
+	padding-top:.2em;
+	padding-bottom:.4em;
+}
+
+#facultylist li a{
+	color: #0f5a37;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#facultylist li ul a{
+	color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    text-decoration: underline;
+}
+
+#facultylist li ul li {
+margin-bottom:.4em;
+}
+
+#facultylist li ul li a.active{
+background-color: #FEEFF2;
+display:block;
+}
+
+.faculty #rightcol {
+    margin-top: 0%;
+}
+
+.faculty #rightcol h1 {
+    color: #FC3C6A;
+    font-size: 1.5em;
+    padding-bottom: 0%;
+}
+
+.faculty #rightcol h2{
+	font-family: ApercuRegular, Helvetica, sans-serif;
+    color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    padding-bottom:.5em;
+}
+
+
+/*---------------------------------- */
+/* COURSES PAGE LIST*/
+/*---------------------------------- */
+#courselist li a{
+	color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    text-decoration: none;
+}
+
+#courselist li ul li a.active{
+background-color: #FEEFF2;
+display:block;
+}
+
+#courselist li {
+	border-bottom:1px solid #0f5a37;
+	/*margin-top:.5em;*/
+	margin-bottom:.5em;
+	/*padding-top:.2em;*/
+	padding-bottom:.5em;
+}
+
+#courselist li a.active{
+background-color: #FEEFF2;
+display:block;
+}
+
+#courselist li:first-child {
+	margin-top:0em;
+	padding-top:.2em;
+}
+
+#courselist li:last-child {
+	border-bottom:none;
+}
+
+#classsection li {
+	border-bottom:1px solid #0f5a37;
+	margin-bottom:1em;
+}
+
+#classsection li:last-child {
+	border-bottom:none;
+}
+
+
+#classsection li h1{
+	color: #FC3C6A;
+    font-size: 1.3em;
+    padding-bottom: 0%;
+    text-decoration: underline;
+}
+
+#classsection li h2{
+    color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    padding-bottom:.5em;
+    text-transform:uppercase;
+}
+
+.classes #rightcol {
+    margin-top: 0%;
+}
+
+/*---------------------------------- */
+/* FAQ PAGE LIST*/
+/*---------------------------------- */
+
+#faqlist li {
+	border-bottom:1px solid #0f5a37;
+	/*margin-top:.5em;*/
+	margin-bottom:.5em;
+	/*padding-top:.2em;*/
+	padding-bottom:.5em;
+}
+
+#faqlist li a{
+	color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    text-decoration: none;
+}
+
+#faqlist li a.active{
+background-color: #FEEFF2;
+display:block;
+}
+
+#faqlist li:last-child {
+	border-bottom:none;
+}
+
+#faqlist li:first-child {
+	margin-top:0em;
+	padding-top:0em;
+}
+
+.faq #rightcol {
+    margin-top: 0%;
+}
+
+/*---------------------------------- */
+/* PORTFOLIO PAGE LIST*/
+/*---------------------------------- */
+
+#portfoliolist li {
+	border-bottom:1px solid #0f5a37;
+	/*margin-top:.5em;*/
+	margin-bottom:.5em;
+	/*padding-top:.2em;*/
+	padding-bottom:.5em;
+}
+
+#portfoliolist li a{
+	color: #FC3C6A;
+    font-size: 1.3em;
+    line-height:1.4em;
+    text-decoration: none;
+}
+
+#portfoliolist li:last-child {
+	border-bottom:none;
+}
+
+#portfoliolist li:first-child {
+	margin-top:0em;
+	padding-top:0em;
+}
+
+#portfoliolist p {
+    color: #0F5A37;
+    font-family: ApercuRegular,helvetica,arial;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+#portfoliolist p strong {
+    color: #0F5A37;
+    font-family: ApercuBold,helvetica,arial;
+    text-decoration:underline;
+}
+
+.portfolio #rightcol {
+    margin-top: 0%;
 }
 
 /*---------------------------------- */
