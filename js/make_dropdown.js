@@ -4,7 +4,7 @@ var windowWidth = $(window).width();
 
 //if (windowWidth > 700) {
 				
-  var timeout    = 500;
+  var timeout    = 600;
   var closetimer = 0;
   var ddmenuitem = null;
 

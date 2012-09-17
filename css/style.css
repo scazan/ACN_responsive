@@ -196,12 +196,6 @@ h1 a{
 	padding-left: 15px;
 }
 
-#pagemenu {
-	display:block;
-	margin-top:4%;
-	padding-left:1.6em;
-}
-
 #pagemenu li {
 
 	margin-bottom:.7em;
@@ -221,6 +215,11 @@ h1 a{
 #centercol{
 height:auto;
 padding:0% 1%;
+}
+
+#centercol img {
+width:100%;
+height:auto;
 }
 
 #centercol h1{

@@ -28,13 +28,19 @@
         .span_1 {
             width:49.5%;
         }
-        .span_2, .sidebar, #date01, #date02, #branding, .rotator, #facebookfeed, #featured, .footernav {
+        .span_2, .sidebar, #sidemenu, #date01, #date02, #branding, .rotator, #facebookfeed, #featured, .footernav {
             margin-left:0;
             width:100%;
         }
 		
 		/* Page Styles
 		------------------------------------------------------------ */
+
+#pagemenu {
+	display:block;
+	margin-top:2%;
+	padding-left:1.6em;
+}
 
 #topnav {
 	height: 5em;
@@ -132,13 +138,19 @@
         .span_7 {
             width:87.375%;
         }
-        .span_8, .sidebar, .rotator, .footernav {
+        .span_8, .sidebar, #sidemenu, .rotator, .footernav {
 		margin-left:0;
 		width:100%;
         }
 		
 		/* Page Styles
 		------------------------------------------------------------- */	
+
+#pagemenu {
+	display:block;
+	margin-top:2%;
+	padding-left:1.6em;
+}
 
 .loginform {
     width:60%;
@@ -274,7 +286,12 @@
 		
 /* Page Styles
 ------------------------------------------------------------- */
-		
+#pagemenu {
+	display:block;
+	margin-top:4%;
+	padding-left:1.6em;
+}
+
 		.blurb {
             width:19%;
         }
