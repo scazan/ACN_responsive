@@ -214,7 +214,11 @@ h1 a{
 
 #centercol{
 height:auto;
-padding:0% 1%;
+padding:0% 0% 0% 1%;
+}
+
+.donkey #centercol{
+margin-left:25.25%;
 }
 
 #centercol img {
@@ -295,6 +299,17 @@ height:auto;
 #rightcol a{
 	color: #0f5a37;
 	text-decoration:underline;
+}
+
+/*---------------------------------- */
+/* WHAT IS, PUBLIC PROGRAMS, ART CENTER HEADER IMAGE */
+/*---------------------------------- */
+
+.lrgimgheader {
+ float: right;
+ height: auto;
+ width: 74%;
+ margin-bottom:1em;
 }
 
 /*---------------------------------- */
