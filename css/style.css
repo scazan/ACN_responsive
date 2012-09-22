@@ -346,6 +346,10 @@ background-color: #FEEFF2;
 display:block;
 }
 
+#facultylist p, #faqlist p, #courselist p {
+	margin-bottom:0%;
+}
+
 .faculty #rightcol {
     margin-top: 0%;
 }
@@ -417,6 +421,7 @@ display:block;
     font-size: 1.3em;
     padding-bottom: 0%;
     text-decoration: underline;
+    text-align:left;
 }
 
 #classsection li h2{
