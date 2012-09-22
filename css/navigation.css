@@ -10,23 +10,23 @@ Author URI: http://newmaterials.la/
  *
  *  DRAWER/DROPDOWN 
  *
- *  LOGIN FORM
+ *      LOGIN FORM
  *
  *  TOP NAVIGATION
  *
- *  SOCIAL LINKS
+ *      SOCIAL LINKS
  *
- *  MAIN NAV
+ *      MAIN NAV
  *
- *  LOGIN LINK
+ *      LOGIN LINK
  *
- *  SEARCH FORM
+ *      SEARCH FORM
  *
  */
 
-/*---------------------------------- */
-/* DRAWER/DROPDOWN */
-/*---------------------------------- */
+/************************************************************************************
+DRAWER/DROPDOWN
+*************************************************************************************/
 
 #drawerwrap {
     background-color: #FDE1E8;
@@ -47,12 +47,12 @@ Author URI: http://newmaterials.la/
     top:1.5em;
     right:0;
     display:block;
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
     cursor: pointer;
     background-image: url(../images/icon_closer.svg);
     background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-size: 60% auto;
     background-position: top right;
 }
 
@@ -164,6 +164,131 @@ width:100%;
     display: none;
 }
 
+
+.mainnav {
+    max-width: 96em;
+    /* [disabled]background-color: #F93; */
+    height: 37px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#navlist li {
+    display: inline;
+    margin-right: 3%;
+    position: relative;
+}
+
+#navlist li.last {
+    margin-right: 0em;
+}
+
+#navlist li a {
+    font-family: ApercuBold, helvetica, arial;
+    font-size: 1.4em;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: .65em;
+}
+
+#navlist ul li a{
+    font-family: ApercuBold, helvetica, arial;
+    font-size: 1.4em;
+    color: #fc3c6a;
+    text-decoration: none;
+    display: block;
+    line-height: 2em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #0f5a37;
+    font-weight: normal;
+    padding-bottom: 0px;
+}
+
+#navlist ul li a:hover{
+    color: #00653b;
+}
+
+#navlist ul {
+    display:none;
+    position:absolute;
+    left:0px;
+    margin-top:.1em;
+    text-align:left;
+    background-color: #FDE1E8;
+    width: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom:.4em;
+    z-index:1000;
+}
+
+#loginsearch a.loginlink {
+    font-size: 1.4em;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #FFF;
+    padding-right: 0.5em;
+    margin-right: 1.8em;
+}
+
+#loginsearch a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#social a {
+    color: #FFF;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+#navlist ul li{
+    display:block;
+    white-space: nowrap;
+    width: auto;
+    margin-right: 0px;
+}
+
+#navlist ul li a.last{
+    border-bottom: 0px;
+}
+
+#navlist li:hover ul {
+    display:block;
+}
+
+#social {
+    float:left;
+    width:14%;
+    margin-top:0.95em;
+}
+
+#social a .fblink {
+    display:block;
+    margin-right:1%;
+}
+
+#loginsearch {
+    float:right;
+    width:15%;
+    text-align:right;
+    margin-top:1em;
+}
+
+#navlist ul {
+display:none;   
+}
+
+#mblnav {
+    display: none;
+    font-size: 3em;
+    color: #FFF;
+}
+
 /*---------------------------------- */
 /* SOCIAL LINKS */
 /*---------------------------------- */
@@ -215,7 +340,7 @@ width:100%;
 
 #navlist li {
     display: inline;
-    margin-right: 3.7%;
+    margin-right: 3.2%;
 }
 
 #navlist li:last-child {
@@ -256,6 +381,18 @@ width:100%;
 /* SEARCH */
 /*---------------------------------- */
 
+.searchthing {
+    position: absolute;
+    top: 0px;
+    background-color: #CC3;
+    right: 0px;
+    height: 37px;
+    width: 20px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
 #mainnav input {
     outline: none;
     border: none;
@@ -285,9 +422,6 @@ width:100%;
 
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
-    /*-webkit-transition: width .5s;
-    -moz-transition: width .5s;
-    transition: width .5s;*/
     font-family: inherit;
     font-size: 1.6em;
     background-color: #FC3C6A;
@@ -313,6 +447,90 @@ width:100%;
     transition: width .5s;
     -moz-transition: width .5s;
     -webkit-transition: width .5s;
+}
+
+/************************************************************************************
+MOBILE NAV
+*************************************************************************************/
+@media screen and (max-width: 747px) {
+
+    /* nav-wrap */
+    #nav-wrap {
+        position: relative;
+    }
+
+    /* menu icon */
+    #mblnav {
+        height:1.2em;
+        width:2em;
+        margin-top: .18em;
+        margin-right: .5em;
+        cursor: pointer;
+        display: block; /* show menu icon */
+        float:right;
+        border:1px solid #382D2C;
+        -moz-border-radius: .2em;
+        -webkit-border-radius: .2em;
+        border-radius: .2em;
+        background-image:url('../images/mblnav_bg.svg');
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position: center .07em;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    }
+    
+    /* main nav */
+    #navlist {
+        clear: both;
+        position: absolute;
+        top: 38px;
+        width: 100%;
+        display: none; /* visibility will be toggled with jquery */
+        text-align:left;
+        background-color: #FDE1E8;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    
+    #navlist li a{
+        font-family: ApercuBold, helvetica, arial;
+        font-size: 1.4em;
+        color: #fc3c6a;
+        text-decoration: none;
+        display: block;
+        line-height: 2em;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #0f5a37;
+        font-weight: normal;
+    }
+
+    #navlist li {
+        clear: both;
+        display: block;
+    }
+    
+    #social, #loginsearch{
+        display:none;
+    }
+    
+    #navlist ul {
+        display:none;   
+    }
+    
+    #navlist li:hover ul {
+        display:none;
+    }
+
+}/* end mobile nav media query*/
+
+@media screen and (min-width: 748px) {
+
+    /* ensure #nav is visible on desktop version */
+    #navlist {
+        display: block !important;
+    }
+
 }
 
 
