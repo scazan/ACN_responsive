@@ -9,18 +9,15 @@ Author URI: http://newmaterials.la/
  *  TABLE OF CONTENTS:
  *
  *  DRAWER/DROPDOWN 
- *
  *      LOGIN FORM
  *
  *  TOP NAVIGATION
- *
  *      SOCIAL LINKS
- *
  *      MAIN NAV
- *
  *      LOGIN LINK
- *
  *      SEARCH FORM
+ *
+ *  MOBILE NAV
  *
  */
 
@@ -150,9 +147,9 @@ width:100%;
      /*width:13em;*/
 }
 
-/*---------------------------------- */
-/* TOP NAVIGATION */
-/*---------------------------------- */
+/************************************************************************************
+TOP NAVIGATION 
+*************************************************************************************/
 
 #topnav {
 	background-color: #fc3c6a;
@@ -167,7 +164,6 @@ width:100%;
 
 .mainnav {
     max-width: 96em;
-    /* [disabled]background-color: #F93; */
     height: 37px;
     margin-right: auto;
     margin-left: auto;
