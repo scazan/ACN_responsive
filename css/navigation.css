@@ -188,11 +188,12 @@ TOP NAVIGATION
     font-weight: 300;
     display: inline-block;
     padding-bottom: .65em;
+    padding-top: .65em;
 }
 
 #navlist ul li a{
     font-family: ApercuBold, helvetica, arial;
-    font-size: 1.4em;
+    font-size: 1.42em;
     color: #fc3c6a;
     text-decoration: none;
     display: block;
@@ -200,8 +201,9 @@ TOP NAVIGATION
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #0f5a37;
-    font-weight: normal;
+    font-weight: 300;
     padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 #navlist ul li a:hover{
@@ -331,7 +333,7 @@ display:none;
     width: 70%;
     float: left;
     text-align: center;
-    margin-top: 1.4em;
+    margin-top: .5em;
 }
 
 #navlist li {

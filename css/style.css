@@ -881,10 +881,14 @@ BOTTOM FOOTER STYLES
 	float: left;
 	display:block;
 }
-.terms {
+.terms a {
+	color: rgba(15, 90, 55, 0.5);
 	float: right;
 	margin-right: 2em;
+	text-decoration: none;
 }
-.credits {
+.credits a {
+	color: rgba(15, 90, 55, 0.5);
 	float: right;
+	text-decoration: none;
 }
