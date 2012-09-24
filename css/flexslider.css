@@ -81,10 +81,11 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav li {
 	display: inline-block;
 	zoom: 1;
-*display: inline;						margin-top: 0px;
+	*display: inline;						
+	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0;
-	margin-left: 1.5%;
+	margin-left: 1.4%;
 }
 .flex-control-paging li a {
 	width: 11px;

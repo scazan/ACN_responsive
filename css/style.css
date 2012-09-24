@@ -258,66 +258,33 @@ h1 a{
 /* FACEBOOK FEED STYLES */
 /*---------------------------------- */
 
-#facebook-feed ul {
-    list-style-type:none;
-}
-
-#facebook-feed li {
-    display:block;
-}
-
-#feed-holder a,.linkbox img {
-    float:left;    
-}
-
-.linkbox img {
-    margin-right:1em;    
-}
-
-#feed-holder a {
-    text-decoration:none;
-    color:#000;
-}
-
-.linkbox {
-	min-height:45px;
-	padding-bottom: 0.4em;
-	padding-right: .7em;
-	padding-top: 0.8em;
-}
-
-.fb-title, .fb-date {
-	font-size:1em;
-	line-height:1em;
-	color:#999;
-	font-weight:normal;
-}
-
-
-.fb-date {
-    font-weight:normal;
-    color:#FC3C6A;
-	margin-bottom:.5em;
-}
-
-.clearfix:before, .clearfix:after { 
-	content: "\0020"; 
-	display: block; 
-	height: 0; 
-	overflow: hidden; 
-}
-.clearfix:after { clear: both; }
-
-.clearfix { zoom: 1; }
-
-.fblinkage {
+.fblink {
 	display:block;
-	margin-top:0.75em;
+	margin-top:1em;
 	color: #F69;
 }
 
-.fblinkage a {
-	color: #F69;	
+.fblink p a{
+	color: #FC3C6A;
+}
+
+#feedwrap a h3 {
+    font-weight:normal;
+    color:#FC3C6A;
+	margin-bottom:.5em;
+	margin-top:1em;
+	font-size:1em;
+	line-height:1em;
+}
+
+#feedwrap a p {
+	color: #F69;
+	font-size:1em;
+	line-height:1em;
+}
+
+#feedwrap a {
+	text-decoration:none;
 }
 
 /*---------------------------------- */

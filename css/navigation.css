@@ -377,45 +377,31 @@ display:none;
 /* SEARCH */
 /*---------------------------------- */
 
-.searchthing {
-    position: absolute;
-    top: 0px;
-    background-color: #CC3;
-    right: 0px;
-    height: 37px;
-    width: 20px;
-    background-image: url(../images/search.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-}
-
+/* reset webkit search input browser style */
 #mainnav input {
     outline: none;
     border: none;
     position: absolute;
-    margin:0;
-    padding:0;
     top: 0;
     right: 0;
+    margin:0;
+    padding:0;
     display: inline;
     margin-top: .3em;
 }
-
-/* removes the search and cancel icon */
+#mainnav input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
 #mainnav input::-webkit-search-decoration,
 #mainnav input::-webkit-search-cancel-button {
-    display: none; 
+    display: none; /* remove the search and cancel icon */
 }
 
-#mainnav input:-moz-placeholder {
-    color: transparent;
-}
-#mainnav input::-webkit-input-placeholder {
-    color: transparent;
-}
-
+/* search input field */
 #mainnav input[type=search] {
-
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
     font-family: inherit;
@@ -433,16 +419,27 @@ display:none;
     -webkit-transition: width .5s;
 }
 
+#mainnav input[type=search] {
+    width: 8px;
+    padding-left: 11px;
+    color: transparent;
+    cursor: pointer;
+}
+#mainnav input[type=search]:hover {
+    /*background-color: #fff;*/
+}
 #mainnav input[type=search]:focus {
-    width: 98%;
-    max-width:960px;
-    padding-left: 25px;
+    width: 930px;
+    padding-left: 32px;
     color: #fff;
     background-color: #FC3C6A;
     cursor: auto;
-    transition: width .5s;
-    -moz-transition: width .5s;
-    -webkit-transition: width .5s;
+}
+#mainnav input:-moz-placeholder {
+    color: #FFF;
+}
+#mainnav input::-webkit-input-placeholder {
+    color: #FFF;
 }
 
 /************************************************************************************

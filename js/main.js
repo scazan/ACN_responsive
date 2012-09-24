@@ -1,14 +1,28 @@
-////////// To start when page loads
 $(document).ready(function() {
-     
+
+/* Load facebook feed from the feed.html doc */
+$('#feedwrap').load('fb_feed/feed.html #feedcontent');
+
+/* Using Fancybox 2 it's now responsive */
+$('.fancybox').fancybox({
+    helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(255, 255, 255, 0.90)'
+            }
+        }
+    }
+});
+/* end Fancybox 2 */
+
+/* forget why this is here...may be able to take out */
 function disableLink(e) {
  // cancels the event
     e.preventDefault();
-
     return false;
 }
- 
-////////// Write first link on mobile to the page , turn off on desktop and tablet
+
+/* Write first link on mobile to the page , turn off on desktop and tablet */
 $(window).bind('load resize orientationchange', function(){   
       
 var windowWidth = $(window).width();
@@ -25,43 +39,18 @@ var windowWidth = $(window).width();
                 // need to set for other link
         } 
    });
-
-
-////////// Load facebook facebook status updates
-////////// For loading of the Facebook feed, it uses Yahoo! Pipes for cross-domain functionality
-
-    $.ajax({
-        type: "GET",
-        url: "http://pipes.yahoo.com/pipes/pipe.run?_id=5c29f5837f7962720b67f40cea28b3ac&_render=rss",
-        dataType: "xml",
-        success: function(xml) {
-            $('#feed-holder').html('<ul></ul>');
-            for(i = 0;i<3;i++){
-                var $rssItem = $(xml).find('item:eq('+i+')');
-                var title = $rssItem.find('title').text();
-                var link = $rssItem.find('link').text();
-                var date = $rssItem.find('pubDate').text();
-                //date = date.replace(/\,/g,''); 
-                var date_array = date.split(" ");
-                var date_string = date_array.remove(-2,-1);
-                
-                
-                $('#feed-holder ul').append('<li> <a href="' + link + '" target="_blank"><div class="linkbox"><div class="fb-date">'+ date_array.join(' ') +'</div><div class="fb-title">' + title + '</div></a></li><div class="clearfix"></div>');        
-            } 
-        }
-    });
-////////// End of facebook
          
-////////// Toggle nav for mobile 
+/* Toggle nav for mobile */ 
 
         $("#mblnav").on("click", function(){
         $("#navlist").slideToggle();
         $(this).toggleClass("active");
     });
-    
-$('#navlist > li').make_dropdown();
 
-////////// Flexslider Setup
+/* This is the bit for the touch-screen dropdown plug-in */    
+// $('#navlist > li').make_dropdown();
+
+/* Flexslider Setup */
 
  $('.flexslider').flexslider({
         animation: "slide",
@@ -77,8 +66,7 @@ $('#navlist > li').make_dropdown();
         }
       });
 
-//////////Make the whole footernav navtabs clickable
- 
+/* Make the whole footernav navtabs clickable */
  $(".navtab").click(function(){
      window.location=$(this).find("a").attr("href"); 
      return false;

@@ -40,6 +40,11 @@
 <script src="js/make_dropdown.js" type="text/javascript"></script>
 <!--Plugin for Flexslider-->
 <script defer src="js/jquery.flexslider.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.0"></script>
+
 <!--**************Other Plugins**************-->
 <script src="js/plugins.js"></script>
 <!--**************Main jQuery**************-->
@@ -154,14 +159,14 @@
 					<li><a href="#" class="first">My Account</a>
 
 						<ul>
-							<li><a href="schedule.html">My Schedule</a></li>
-					        <li><a href="adddrop.html">Add/Drop Classes</a></li>
-							<li><a href="account.html">Account Summary</a></li>
-							<li><a href="grades.html">My Grades</a></li>
-							<li><a href="transcript.html">My Transcript</a></li>
-							<li><a href="my1098.html">My 1098-T</a></li>
-					        <li><a href="mycontact.html">My Contact Info</a></li>
-					        <li><a href="password.html" class="last">My Password</a></li>
+							<li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">My Schedule</a></li>
+					        <li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Add/Drop Classes</a></li>
+							<li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Account Summary</a></li>
+							<li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">My Grades</a></li>
+							<li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">My Transcript</a></li>
+							<li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">My 1098-T</a></li>
+					        <li><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">My Contact Info</a></li>
+					        <li><a class="fancybox last" data-fancybox-type="iframe" href="fb_feed/feed.html">My Password</a></li>
 						</ul>
 
 					</li>
@@ -169,7 +174,6 @@
 
 						<ul>
 							<li><a href="contact.html">Contact Info</a></li>
-					        <li><a href="staff.html">Staff</a></li>
 							<li><a href="visiting.html">Visiting Us</a></li>
 							<li><a href="reqcatalog.html" class="last">Request Catalog</a></li>
 						</ul>
@@ -268,14 +272,18 @@
 
 <aside class="sidebar mblhide">
 
-<div id="facebookfeed" class="col">
+	<div id="facebookfeed" class="col">
 
-<h2>What's <span class="new">NEW</span></h2>
-<div id="facebook-feed">
-    <div id="feed-holder">
-    </div>
-</div>
-<span class="fblinkage"><p>via <a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" target="blank">Facebook</a></p></span>
+		<h2>What's <span class="new">NEW</span></h2>
+
+		<div id="feedwrap">
+
+			
+
+		</div>
+	
+		<span class="fblink"><p>via <a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" target="blank">Facebook</a></p></span>
+
 </div>
 
 <div id="featured" class="col">
@@ -398,8 +406,9 @@
 	<div class="bottomfooter">
 
 			<p class="copyright">	&copy;2012 Art Center at Night. All rights reserved.</p> 
-			<p class="credits">Credits.</p>
-			<p class="terms">Terms of use.</p>
+			<p class="credits">
+				<a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Credits.</a></p>
+			<p class="terms"><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Terms of use.</a></p>
 			
 		</div><!--end bottomfooter-->
 
