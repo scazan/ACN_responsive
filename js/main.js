@@ -15,6 +15,18 @@ $('.fancybox').fancybox({
 });
 /* end Fancybox 2 */
 
+/* Using Fancybox 2 it's now responsive */
+$('.gallerybox').fancybox({
+    helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(255, 255, 255, 0.90)'
+            }
+        }
+    }
+});
+/* end Fancybox 2 */
+
 /* forget why this is here...may be able to take out */
 function disableLink(e) {
  // cancels the event

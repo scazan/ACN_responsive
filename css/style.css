@@ -329,7 +329,6 @@ h1 a{
 /*---------------------------------- */
 
 #centercol{
-	height:auto;
 	padding:0 1%;
 }
 
@@ -370,7 +369,7 @@ h1 a{
 }
 
 #centercol p{
-	font-size: 1.2em;
+	font-size: 1.22em;
 	color: #0f5a37;
 	text-align: left;
 	margin-bottom:4%;
@@ -895,4 +894,29 @@ BOTTOM FOOTER STYLES
 	color: rgba(15, 90, 55, 0.5);
 	float: right;
 	text-decoration: none;
+}
+
+/**********************************************************************
+TEST CONTENT STYLES
+***********************************************************************/
+
+.projectimage {
+
+width:24%;
+height:auto;
+float:left;
+margin-bottom: 1%;
+margin-right: 1%;
+
+}
+
+#gallerywrap h1 {
+
+	text-decoration: underline;
+	font-size: 2em;
+	color: #FC3C6A;
+	padding-bottom:2%;
+	text-align: center;
+	display:block;
+
 }

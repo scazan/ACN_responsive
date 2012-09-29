@@ -297,6 +297,10 @@
 		
 /* Page Styles
 ------------------------------------------------------------- */
+#centercol{
+	min-height:600px;
+}
+
 #pagemenu {
 	display:block;
 	margin-top:4%;
