@@ -379,6 +379,10 @@ display:none;
 /* SEARCH */
 /*---------------------------------- */
 
+#mainnav .submitform{
+    display:none;
+}
+
 /* reset webkit search input browser style */
 #mainnav input {
     outline: none;

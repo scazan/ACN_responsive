@@ -59,8 +59,7 @@ var windowWidth = $(window).width();
         $(this).toggleClass("active");
     });
 
-/* This is the bit for the touch-screen dropdown plug-in */    
-// $('#navlist > li').make_dropdown();
+$('#navlist > li').make_dropdown();
 
 /* Flexslider Setup */
 
@@ -78,8 +77,8 @@ var windowWidth = $(window).width();
         }
       });
 
-/* Make the whole footernav navtabs clickable */
- $(".navtab").click(function(){
+/* Make the whole footernav navtabs clickable, and a few other page items */
+ $(".navtab, #datewrap01, #datewrap02, #featured").click(function(){
      window.location=$(this).find("a").attr("href"); 
      return false;
 });
@@ -88,24 +87,19 @@ var windowWidth = $(window).width();
 
    $('.triggerdown').click(function(){
         $('#drawerwrap').animate({height:'10.5em'}, 500);
-        $('#loginlink').removeClass('triggerdown');
+        $('.toggle, #loginlink').removeClass('triggerdown');
     })
 
 
-    $('.triggerup').live('click', function() {
-        $('#drawerwrap').animate({height:'0em'}, 500);
-        $('#loginlink').addClass('trigger');
-    });
-
      $('#drawerclose').live('click', function() {
         $('#drawerwrap').animate({height:'0em'}, 500);
-        $('#loginlink').addClass('trigger');
+        $('.toggle, #loginlink').addClass('trigger');
     });
 
-    $('#login').click(function(){
+    $('.toggle, #login').click(function(){
         $('.login').css("display","list-item");
-        return false;
-    })  
+        //return false;
+    })     
 
 });
 ////////// end document ready function //////////

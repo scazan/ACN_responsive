@@ -240,6 +240,10 @@
 	padding-right: 8%;
 }
 
+#mainnav input[type=search]:focus {
+    width: 96%;
+}
+
     }
 
 /*---------------------------------- */
