@@ -73,9 +73,6 @@ body {
 	margin-left: auto;
 }
 
-.mblshow {
-display:none;	
-}
 
 .hide {
 display:none;	
@@ -661,15 +658,6 @@ h1 a{
 	cursor:pointer;
 }
 
-.navwrap {
-	display: block;
-	background-image: url(../images/bit.png);
-	background-repeat: repeat-y;
-	background-position: right;
-	height: 7.5em;
-	padding-right: 8%;
-	overflow:hidden;
-}
 .navtab h3 a{
 	font-size: 1.1em;
 	color: #FC3C6A;

@@ -35,6 +35,9 @@
 		
 		/* Page Styles
 		------------------------------------------------------------ */
+.navwrap {
+	background-image:none;
+}
 
 #pagemenu {
 	display:block;
@@ -145,6 +148,11 @@
 		
 		/* Page Styles
 		------------------------------------------------------------- */	
+		
+		.mblshow {
+display:none;	
+}
+
 		.tblthide {
 		display:none;	
 		}
@@ -244,6 +252,16 @@
     width: 96%;
 }
 
+.navwrap {
+	display: block;
+	background-image: url(../images/bit.png);
+	background-repeat: repeat-y;
+	background-position: right;
+	height: 7.5em;
+	padding-right: 8%;
+	overflow:hidden;
+}
+
     }
 
 /*---------------------------------- */
@@ -301,6 +319,20 @@
 		
 /* Page Styles
 ------------------------------------------------------------- */
+.mblshow {
+display:none;	
+}
+
+.navwrap {
+	display: block;
+	background-image: url(../images/bit.png);
+	background-repeat: repeat-y;
+	background-position: right;
+	height: 7.5em;
+	padding-right: 8%;
+	overflow:hidden;
+}
+
 #centercol{
 	min-height:600px;
 }
