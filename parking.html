@@ -40,6 +40,11 @@
 <script src="js/make_dropdown.js" type="text/javascript"></script>
 <!--Plugin for Flexslider-->
 <script defer src="js/jquery.flexslider.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.0"></script>
+
 <!--**************Other Plugins**************-->
 <script src="js/plugins.js"></script>
 <!--**************Main jQuery**************-->
@@ -56,32 +61,22 @@
 			<div id="drawer">
 				<a id="drawerclose"><span class="hide">Closer</span></a>
 				<ul>
-
-					<li class="fb">
-						<h2><a href="https://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387?ref=ts" target="_blank">Join us on Facebook</a></h2>
-						<p>Something related to Facebook</p>
-					</li>
-					<li class="twit">
-						<h2><a href="http://es.twitter.com/art_center" target="_blank">Follow us on Twitter</a></h2>
-						<p>Today's Office: If you could revisit any conversation what would you say? <a href="http://www.google.com">http://bit.ly/to_heavingto</a></p>
-						<p>> More Tweets</p>
-					</li>
 					<li class="login">
 						<h2><a href="#">Login</a></h2>
 						
 						<div class="logininfo">
 						
-						<div class="support">
-						<h3>Need Help with your Login?</h3>
-						<p>Contact the Help Desk at:<br />sctech@artcenter.edu or 626.396.4234</p>
-						</div>
+							<div class="support">
+							<h3>Need Help with your Login?</h3>
+							<p>Contact the Help Desk at:<br />sctech@artcenter.edu or 626.396.4234</p>
+							</div>
+							
+							<div class="registration">
+							<h3>Registration Questions?</h3>
+							<p>Contact Public Programs: 626.396.2319</p>
+							</div>
 						
-						<div class="registration">
-						<h3>Registration Questions?</h3>
-						<p>Contact Public Programs: 626.396.2319</p>
-						</div>
-						
-						</div>
+						</div><!--end  login info-->
 
 						<div class="loginform">
 							<form>
@@ -89,10 +84,11 @@
 	            				<input type="password" name="password" placeholder="Password" class="user" />
 	            				<input type="submit" value="Login" name="submit" class="submit" />
 							</form>
-						</div>
+						</div><!--end  login form-->
+						
 					</li>
 
-				</ul>
+				</ul><!--end  login info-->
 
 			</div><!--end drawer-->
 
@@ -108,8 +104,8 @@
 
 				<div id="sociallinks" class="mblhide">
 
-					<a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" id="fblink" class="triggerdown"><span class="hide">Facebook</span></a>
-					<a href="https://twitter.com/janchip" id="twitlink" class="triggerdown"><span class="hide">Twitter</span></a>
+					<a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" id="fblink" target="_blank"><span class="hide">Facebook</span></a>
+					<a href="http://es.twitter.com/art_center" id="twitlink" target="_blank"><span class="hide">Twitter</span></a>
 
 				</div>
 
@@ -120,9 +116,9 @@
 							<li><a href="whatis.html">What is ACN?</a></li>
 					        <li><a href="public.html">Public Programs</a></li>
 							<li><a href="artcenter.html">Art Center</a></li>
-							<li><a href="scholarship.html">Scholarship Donors</a></li>
+							<li><a href="donors.html">Scholarship Donors</a></li>
 							<li><a href="partners.html">Partners</a></li>
-							<li><a href="support.html" class="last">Support ACN</a></li>
+							<li><a href="https://www.artcenter.edu/accd/giving/donation.jsp" target="_blank" class="last">Support ACN</a></li>
 						</ul>
 
 					</li>
@@ -134,17 +130,19 @@
 							<li><a href="faculty.html">Faculty</a></li>
 							<li><a href="students.html">Students</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="catalogpdf.html"class="last">Catalog Download</a></li>
+							<li><a href="downloads/acn_catalog.pdf">Catalog Download</a></li>
+							<li><a href="calendar.html" class="last">Calendar</a></li>
 						</ul>
 
 					</li>
 					<li><a href="#" class="first">Register</a>
 
 						<ul>
-							<li><a href="register.html">Register Now</a></li>
+							<li><a href="#" class="triggerdown toggle">Register Now</a></li>
 					        <li><a href="howto.html">How to Register</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li><a href="tuition.html" class="last">Tuition</a></li>
+							<li><a href="tuition.html">Tuition</a></li>
+							<li><a href="scholarships.html">Scholarships</a></li>
+							<li><a href="reginfo.html" class="last">General Info</a></li>	
 						</ul>
 
 					</li>
@@ -155,7 +153,7 @@
 					        <li><a href="studentid.html">Student I.D.</a></li>
 							<li><a href="parking.html">Parking</a></li>
 							<li><a href="campus.html">Campus Info</a></li>
-							<li><a href="policies.html">Policies and Procedures</a></li>
+							<li><a href="policies.html">Policies & Procedures</a></li>
 							<li><a href="faq.html" class="last">FAQ</a></li>
 						</ul>
 
@@ -163,14 +161,30 @@
 					<li><a href="#" class="first">My Account</a>
 
 						<ul>
-							<li><a href="schedule.html">My Schedule</a></li>
-					        <li><a href="adddrop.html">Add/Drop Classes</a></li>
-							<li><a href="account.html">Account Summary</a></li>
-							<li><a href="grades.html">My Grades</a></li>
-							<li><a href="transcript.html">My Transcript</a></li>
-							<li><a href="my1098.html">My 1098-T</a></li>
-					        <li><a href="mycontact.html">My Contact Info</a></li>
-					        <li><a href="password.html" class="last">My Password</a></li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Schedule</a>
+							</li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle">Add/Drop Classes</a>
+					        </li>
+							<li>
+								<a href="#" class="triggerdown toggle">Account Summary</a>
+							</li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Grades</a>
+							</li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Transcript</a>
+							</li>
+							<li>
+								<a href="#"  class="triggerdown toggle">My 1098-T</a>
+							</li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle">My Contact Info</a>
+					        </li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle last">My Password</a>
+					        </li>
 						</ul>
 
 					</li>
@@ -178,9 +192,8 @@
 
 						<ul>
 							<li><a href="contact.html">Contact Info</a></li>
-					        <li><a href="staff.html">Staff</a></li>
-							<li><a href="visiting.html">Visiting Us</a></li>
-							<li><a href="reqcatalog.html" class="last">Request Catalog</a></li>
+							<li><a href="directions.html">Directions</a></li>
+							<li><a href="https://www.applyweb.com/public/inquiry?accdinq" target="_blank" class="last">Request a Catalog</a></li>
 						</ul>
 
 					</li>
@@ -191,7 +204,8 @@
 				</div>
 
 				<form class="mblhide">
-					<input type="search">
+					<input type="search" />
+					<input type="submit" value="Search" class="submitform" />
 				</form>
 
 			</nav>
@@ -245,7 +259,7 @@
 			        <li><a href="studentid.html">Student I.D.</a></li>
 					<li><a href="parking.html">Parking</a></li>
 					<li><a href="campus.html">Campus Info</a></li>
-					<li><a href="policies.html">Policies and Procedures</a></li>
+					<li><a href="policies.html">Policies & Procedures</a></li>
 					<li><a href="faq.html" class="last">FAQ</a></li>
 				</ul>
 
@@ -297,11 +311,11 @@
 
 					<ul>
 						<li><a href="whatis.html">What is ACN?</a></li>
-				        <li><a href="publicprograms.html">Public Programs</a></li>
+				        <li><a href="public.html">Public Programs</a></li>
 						<li><a href="artcenter.html">Art Center</a></li>
-						<li><a href="scholarship.html">Scholarship Donors</a></li>
+						<li><a href="donors.html">Scholarship Donors</a></li>
 						<li><a href="partners.html">Partners</a></li>
-						<li><a href="support.html" class="last">Support ACN</a></li>
+						<li><a href="https://www.artcenter.edu/accd/giving/donation.jsp" class="last" target="_blank">Support ACN</a></li>
 					</ul>
 
 			</div>
@@ -316,7 +330,7 @@
 						<li><a href="faculty.html">Faculty</a></li>
 						<li><a href="students.html">Students</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="catalogpdf.html" class="last">Catalog PDF</a></li>
+						<li><a href="downloads/acn_catalog.pdf" class="last">Catalog PDF</a></li>
 					</ul>
 
 			</div>
@@ -353,8 +367,9 @@
 	<div class="bottomfooter">
 
 			<p class="copyright">	&copy;2012 Art Center at Night. All rights reserved.</p> 
-			<p class="credits">Credits.</p>
-			<p class="terms">Terms of use.</p>
+			<p class="credits">
+				<a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Credits.</a></p>
+			<p class="terms"><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Terms of use.</a></p>
 			
 		</div><!--end bottomfooter-->
 

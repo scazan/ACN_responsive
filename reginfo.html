@@ -40,6 +40,11 @@
 <script src="js/make_dropdown.js" type="text/javascript"></script>
 <!--Plugin for Flexslider-->
 <script defer src="js/jquery.flexslider.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.0"></script>
+
 <!--**************Other Plugins**************-->
 <script src="js/plugins.js"></script>
 <!--**************Main jQuery**************-->
@@ -47,7 +52,7 @@
 
 </head>
 
-<body class="page">
+<body>
 <!--**************dropdown header**************-->
 	<div id="top-bar">
 		
@@ -56,32 +61,22 @@
 			<div id="drawer">
 				<a id="drawerclose"><span class="hide">Closer</span></a>
 				<ul>
-
-					<li class="fb">
-						<h2><a href="https://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387?ref=ts" target="_blank">Join us on Facebook</a></h2>
-						<p>Something related to Facebook</p>
-					</li>
-					<li class="twit">
-						<h2><a href="http://es.twitter.com/art_center" target="_blank">Follow us on Twitter</a></h2>
-						<p>Today's Office: If you could revisit any conversation what would you say? <a href="http://www.google.com">http://bit.ly/to_heavingto</a></p>
-						<p>> More Tweets</p>
-					</li>
 					<li class="login">
 						<h2><a href="#">Login</a></h2>
 						
 						<div class="logininfo">
 						
-						<div class="support">
-						<h3>Need Help with your Login?</h3>
-						<p>Contact the Help Desk at:<br />sctech@artcenter.edu or 626.396.4234</p>
-						</div>
+							<div class="support">
+							<h3>Need Help with your Login?</h3>
+							<p>Contact the Help Desk at:<br />sctech@artcenter.edu or 626.396.4234</p>
+							</div>
+							
+							<div class="registration">
+							<h3>Registration Questions?</h3>
+							<p>Contact Public Programs: 626.396.2319</p>
+							</div>
 						
-						<div class="registration">
-						<h3>Registration Questions?</h3>
-						<p>Contact Public Programs: 626.396.2319</p>
-						</div>
-						
-						</div>
+						</div><!--end  login info-->
 
 						<div class="loginform">
 							<form>
@@ -89,10 +84,11 @@
 	            				<input type="password" name="password" placeholder="Password" class="user" />
 	            				<input type="submit" value="Login" name="submit" class="submit" />
 							</form>
-						</div>
+						</div><!--end  login form-->
+						
 					</li>
 
-				</ul>
+				</ul><!--end  login info-->
 
 			</div><!--end drawer-->
 
@@ -108,8 +104,8 @@
 
 				<div id="sociallinks" class="mblhide">
 
-					<a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" id="fblink" class="triggerdown"><span class="hide">Facebook</span></a>
-					<a href="https://twitter.com/janchip" id="twitlink" class="triggerdown"><span class="hide">Twitter</span></a>
+					<a href="http://www.facebook.com/pages/Art-Center-at-Night-ACN-Art-Center-College-of-Design/141620312598387" id="fblink" target="_blank"><span class="hide">Facebook</span></a>
+					<a href="http://es.twitter.com/art_center" id="twitlink" target="_blank"><span class="hide">Twitter</span></a>
 
 				</div>
 
@@ -118,11 +114,11 @@
 
 						<ul>
 							<li><a href="whatis.html">What is ACN?</a></li>
-					        <li><a href="public.hmtl">Public Programs</a></li>
-							<li><a href="artcenter.hmtl">Art Center</a></li>
-							<li><a href="scholarship.html">Scholarship Donors</a></li>
+					        <li><a href="public.html">Public Programs</a></li>
+							<li><a href="artcenter.html">Art Center</a></li>
+							<li><a href="donors.html">Scholarship Donors</a></li>
 							<li><a href="partners.html">Partners</a></li>
-							<li><a href="support.hmtl" class="last">Support ACN</a></li>
+							<li><a href="https://www.artcenter.edu/accd/giving/donation.jsp" target="_blank" class="last">Support ACN</a></li>
 						</ul>
 
 					</li>
@@ -130,21 +126,23 @@
 
 						<ul>
 							<li><a href="portfolio.html">Portfolio Prep</a></li>
-					        <li><a href="courses.hmtl">Courses</a></li>
-							<li><a href="faculty.hmtl">Faculty</a></li>
-							<li><a href="students.hmtl">Students</a></li>
+					        <li><a href="courses.html">Courses</a></li>
+							<li><a href="faculty.html">Faculty</a></li>
+							<li><a href="students.html">Students</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="catalogpdf.html"class="last">Catalog Download</a></li>
+							<li><a href="downloads/acn_catalog.pdf">Catalog Download</a></li>
+							<li><a href="calendar.html" class="last">Calendar</a></li>
 						</ul>
 
 					</li>
 					<li><a href="#" class="first">Register</a>
 
 						<ul>
-							<li><a href="register.html">Register Now</a></li>
+							<li><a href="#" class="triggerdown toggle">Register Now</a></li>
 					        <li><a href="howto.html">How to Register</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li><a href="tuition.html" class="last">Tuition</a></li>
+							<li><a href="tuition.html">Tuition</a></li>
+							<li><a href="scholarships.html">Scholarships</a></li>
+							<li><a href="reginfo.html" class="last">General Info</a></li>	
 						</ul>
 
 					</li>
@@ -155,7 +153,7 @@
 					        <li><a href="studentid.html">Student I.D.</a></li>
 							<li><a href="parking.html">Parking</a></li>
 							<li><a href="campus.html">Campus Info</a></li>
-							<li><a href="policies.html">Policies and Procedures</a></li>
+							<li><a href="policies.html">Policies & Procedures</a></li>
 							<li><a href="faq.html" class="last">FAQ</a></li>
 						</ul>
 
@@ -163,14 +161,30 @@
 					<li><a href="#" class="first">My Account</a>
 
 						<ul>
-							<li><a href="schedule.html">My Schedule</a></li>
-					        <li><a href="adddrop.html">Add/Drop Classes</a></li>
-							<li><a href="account.html">Account Summary</a></li>
-							<li><a href="grades.html">My Grades</a></li>
-							<li><a href="transcript.html">My Transcript</a></li>
-							<li><a href="my1098.html">My 1098-T</a></li>
-					        <li><a href="mycontact.html">My Contact Info</a></li>
-					        <li><a href="password.hmtl" class="last">My Password</a></li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Schedule</a>
+							</li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle">Add/Drop Classes</a>
+					        </li>
+							<li>
+								<a href="#" class="triggerdown toggle">Account Summary</a>
+							</li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Grades</a>
+							</li>
+							<li>
+								<a href="#" class="triggerdown toggle">My Transcript</a>
+							</li>
+							<li>
+								<a href="#"  class="triggerdown toggle">My 1098-T</a>
+							</li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle">My Contact Info</a>
+					        </li>
+					        <li>
+					        	<a href="#" class="triggerdown toggle last">My Password</a>
+					        </li>
 						</ul>
 
 					</li>
@@ -178,9 +192,8 @@
 
 						<ul>
 							<li><a href="contact.html">Contact Info</a></li>
-					        <li><a href="staff.html">Staff</a></li>
-							<li><a href="visiting.html">Visiting Us</a></li>
-							<li><a href="reqcatalog.html" class="last">Request Catalog</a></li>
+							<li><a href="directions.html">Directions</a></li>
+							<li><a href="https://www.applyweb.com/public/inquiry?accdinq" target="_blank" class="last">Request a Catalog</a></li>
 						</ul>
 
 					</li>
@@ -191,7 +204,8 @@
 				</div>
 
 				<form class="mblhide">
-					<input type="search">
+					<input type="search" />
+					<input type="submit" value="Search" class="submitform" />
 				</form>
 
 			</nav>
@@ -256,100 +270,23 @@
 
  		<h1>General Info</h1>
 		
-		<p>Prior to registration, if you have questions about your eligibility or course prerequisites, call 626.396.2319. It may be necessary to meet with, or submit samples of your artwork to, an ACN advisor.</p>
+		<h3>Vestibulum auctor dapibus neque.</h3>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-		<p>Registration forms and course tuition must be received by the Friday preceding the start of the term.</p>
-
-		<p>Your early registration reserves your seat in class and helps ensure your course selections meet required enrollment levels. Courses without the required minimum enrollment, as determined by the program director, will be cancelled one to three days before the first class meeting. Students enrolled in a cancelled course will be notified by an ACN staff member.</p>
-
-		<p>Your space in class is not guaranteed until your registration has been received and processed. <strong>We highly recommend using our secure online registration process as the fastest way to register and pay for Art Center at Night classes.</strong></p>
-
-		<p>Late registration forms will be accepted the first week of the term for courses with available seats. They can be submitted online, in person at the Public Programs office or by fax with credit card payment.</p>
-
-		<p><strong>Once the term begins, a non-refundable late registration fee of $50 per course will be charged. </strong><em>Note: This does not apply to shorter workshops or for courses that begin later in the term.</em> A $10 fee will be charged for a first returned check. A $20 fee will be charged for any subsequent returned checks.</p>
-
-		<h2>Priority Online Registration</h2>
-		<p>For priority registration, register online with a credit or debit card (Visa, Mastercard, American Express or Discover Card).</p>
-
-		<p>Be sure to see our Calendar for important course registration dates.</p>
+		<h2>Vestibulum auctor dapibus neque.</h2>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 		
-		<h3>Registration for New Students [expands]</h3>
-		<h4>Step 1:</h4>
-		<p>To register for a class, select Register Now and locate the course(s) in which you would like to enroll. Click on a specific course title to see the course description, prerequisite information and course tuition.&nbsp; A second window will open. To make your course selection, return to the main window and select the box next to a class title to add it to your shopping cart. </p>
-		<p>After selecting your course(s), click &quot;submit&quot; to begin our secure registration process.<br />
+		<h3>Vestibulum auctor dapibus neque.</h3>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-		<h4>Step 2:</h4>
-		<p>Create your ACN student account on the Personal Identification page.</p>
-		<h4>Step 3:</h4>
-		<p>Verify the courses you have selected and confirm your course schedule and tuition. Select &quot;register now/check out,&quot; &quot;method of payment,&quot; and finally, &quot;submit&quot; to complete your registration.</p>
 
-		<h4>Step 4:</h4>
-		<p>Your credit card will be processed immediately. If your credit card is declined, your registration has not been processed. Please contact your credit card company if you feel your card was declined in error.</p>
-
-		<h4>Step 5:</h4>
+		<h4>Vestibulum auctor dapibus neque.</h4>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">morbi tristique senectus et netus</a> Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 		
-		<p>Your ACN student login (username), password and registration information will be confirmed by email. Please save this information, as you will need it to check your class schedule, add or drop courses, check your grades or to request an unofficial transcript. To ensure your confirmation email is not blocked, add <a href="mailto:publicprograms@artcenter.edu">publicprograms@artcenter.edu</a> to your address book or contacts list.</p>
-
-		<h3>Returning Students: [expands]</h3>
-		<h4>Step 1:</h4>
-		<p>Login using your ACN user name and password. Please contact the South Campus Help Desk (626.396.4234 or <a href="mailto:sctech@artcenter.edu">sctech@artcenter.edu</a>) if you have forgotten your username and password.<br />
+		<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+		<h4>Vestibulum auctor dapibus neque.</h4>
+		<p>Pellentesque habitant et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		
-		Be sure to see our Calendar for important course registration dates.</p>
-
-		<h4>Step 2:</h4>
-		
-		<p>To register for a class, go to Register Now and select the course(s) you would like to add to your shopping cart. Click on a specific course title to see the course description, prerequisite information and course tuition. A second window will open. To make your course selection, return to the main window and select the box next to a class title to add it to your shopping cart.</p>
-
-		<p>After selecting your course(s), click &quot;submit&quot; to begin our secure registration process.<br />
-
-		<h4>Step 3:</h4>
-		
-		<p>Verify the courses you have selected and confirm your course schedule and tuition. Select &quot;register now/check out,&quot; &quot;method of payment,&quot; and finally, &nbsp;&quot;submit&quot; to complete your registration. <br />
-
-		<h4>Step 4:</h4>
-		
-		<p>Your credit card will be processed immediately. If your credit card is declined, your registration has not been processed. Please contact your credit card company if you feel your card was declined in error.<br />
-
-		<h4>Step 5:</h4>
-		
-		<p>Your ACN registration will be confirmed by email.</p>
-		
-		<h2>REGISTERING IN PERSON</h2>
-
-		<p>If you will be paying by check or money order, you must pay in person or by mail. Cash is not accepted.</p>
-
-		<h3>Register in Person [expands]</h3>
-
-		<p>Register in person at Art Center&rsquo;s Public Programs office. &nbsp;Be sure to bring your completed registration form and tuition payment. Payments are only accepted during office hours.</p>
-
-		<p><em>Please note: In-person registration forms received after 5:00 p.m. will be processed the next business day. Your space in class is not guaranteed until your registration has been processed.</em></p>
-
-		<p>If you register in person, you will receive a registration confirmation letter by mail, along with an ACN student user name and password. Please save this information, as you will need it to check your class schedule, add or drop courses, check your grades or to request an unofficial transcript.</p>
-
-		<p>If your registration is received within a week of the start of the term, you may not receive your confirmation letter before classes begin. It is your responsibility to confirm your registration and class schedule with our office. You may pick up your confirmation letter in the Public Programs office during the first week of class.</p>
-
-		<h3>Registering by Mail or Fax [expands to reveal information below]</h3>
-
-		<p>Please fill out the registration form and mail it, along with full course tuition payment (check, money order or credit card) to: </p>
-		
-		<p>Art Center at Night<br />
-		P.O. Box 7197<br />
-		Pasadena, CA 91109-7197</p>
-
-		<p>Or, you may fax your registration to 626.396.4219. You must include your credit card information for payment if you register by fax.</p>
-
-		<p>You will be mailed a registration confirmation letter, along with an ACN student user name and password. Please save this information, as you will need it to check your class schedule, add or drop courses, check your grades or to request an unofficial transcript. </p>
-
-		<p>If your registration is received within a week of the start of the term, you may not receive your confirmation letter before classes begin. It is your responsibility to confirm your registration and class schedule with our office. You may pick up your confirmation letter in the &lt;link&gt;Public Programs office&lt;/link&gt; during the first week of class.</p>
-
-		<h3>International Students</h3>
-
-		<p>International students with a native language other than English must score a 173 on the computer-based Test of English as a Foreign Language (TOEFL) or 61 on the Internet-based TOEFL (iBT) before registering for Art Center at Night studio art classes.</p>
-
-		<p>A score of 213 (CBT) or 80 (iBT) is required for Humanities and Sciences classes. A copy of your score report should accompany your registration form.</p>
-
-		<p>Students with visas such as B-1 or B-2 should be aware their immigration status may be in jeopardy. The Art Center at Night program is unable to issue I-20s.</p>
-
 	</div><!--end center column-->
 
 	<div id="rightcol" class="col">
@@ -373,7 +310,7 @@
 			<p><a href="http://www.artcenter.edu/acn">Art Center at Night(ACN),</a> the continuing studies program at Art Center College of Design, offers nearly 200 innovative courses in art and design.</p>
 		</div>
 
-		<div class="footernavlist mblhide tblthide">
+<div class="footernavlist mblhide tblthide">
 
 			<div id="aboutus">
 
@@ -381,11 +318,11 @@
 
 					<ul>
 						<li><a href="whatis.html">What is ACN?</a></li>
-				        <li><a href="publicprograms.html">Public Programs</a></li>
+				        <li><a href="public.html">Public Programs</a></li>
 						<li><a href="artcenter.html">Art Center</a></li>
-						<li><a href="scholarship.html">Scholarship Donors</a></li>
+						<li><a href="donors.html">Scholarship Donors</a></li>
 						<li><a href="partners.html">Partners</a></li>
-						<li><a href="support.html" class="last">Support ACN</a></li>
+						<li><a href="https://www.artcenter.edu/accd/giving/donation.jsp" class="last" target="_blank">Support ACN</a></li>
 					</ul>
 
 			</div>
@@ -400,7 +337,7 @@
 						<li><a href="faculty.html">Faculty</a></li>
 						<li><a href="students.html">Students</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="catalogpdf.html" class="last">Catalog PDF</a></li>
+						<li><a href="downloads/acn_catalog.pdf" class="last">Catalog PDF</a></li>
 					</ul>
 
 			</div>
@@ -431,14 +368,15 @@
 			</div>
 
 		</div><!--end footernavlist-->
-		
+
 	</div><!--end pagefootercontent-->
 
 	<div class="bottomfooter">
 
 			<p class="copyright">	&copy;2012 Art Center at Night. All rights reserved.</p> 
-			<p class="credits">Credits.</p>
-			<p class="terms">Terms of use.</p>
+			<p class="credits">
+				<a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Credits.</a></p>
+			<p class="terms"><a class="fancybox" data-fancybox-type="iframe" href="fb_feed/feed.html">Terms of use.</a></p>
 			
 		</div><!--end bottomfooter-->
 
