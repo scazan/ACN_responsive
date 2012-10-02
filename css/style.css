@@ -217,6 +217,11 @@ h1 a{
 	padding-left: 15px;
 }
 
+/*--set active state for side menus on pages--*/
+#pagemenu li a.activelink {
+		color: #00653B;
+}
+
 #pagemenu li {
 
 	margin-bottom:.7em;
